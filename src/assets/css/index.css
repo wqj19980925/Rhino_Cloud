@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: none; 
+    list-style: none;
+}
+p{
+    margin: 0;
+    padding: 0; 
+}
+.head-relevant{
+    height: 30px;
+    background: #f2f2f2;
+    font-size: 16px;
+    line-height: 32px;
+}
+.head-nav{
+    width: 80%;
+    margin: 0 auto;
+    height: 120px;
+}
+.head_empty{
+    height: 120px;
+}
+.logo-img{
+    width: 100%;
+    height: 100%;
+}
+.head-contact-infor{
+    line-height: 88px;
+}
+.head-title{
+    height: 50px;
+    background: url('~@/assets/images/nav.png') no-repeat;
+    background-size: 100% 100%;
+}
+.nav-title,.el-menu--horizontal>.el-menu-item,.el-menu--horizontal>.el-submenu  .el-submenu__title,.title-text{
+    height: 50px;
+    line-height: 50px;
+    display: inline-block;
+}
+
+.title-text{
+    background: none;
+    color:#fff;
+    width: 100%;
+}
+
+.title-text .el-menu-item,.title-text .el-submenu .el-submenu__title,.title-text .el-submenu .el-submenu__title .el-icon-arrow-down{
+    color: #fff;
+}
+.title-text .is-active{
+    background: #fff;
+}
+
+@keyframes mymove
+{
+    0%{
+        margin-top: 0px;
+        height: 50px;
+        line-height: 50px;
+    }
+    25%{
+        margin-top: 2px;
+        height: 48px;
+        line-height: 46px;
+    }
+    50%{
+        margin-top: 4px;
+        height: 46px;
+        line-height: 42px;
+    }
+    75%{
+        margin-top: 6px;
+        height: 44px;
+        line-height: 38px;
+    }
+    100% {
+        margin-top: 8px;
+        height: 42px;
+        line-height: 32px;
+    }
+}
+
+.title-text .el-menu-item:hover,.title-text .el-submenu:hover{
+    /* margin-top: 8px; */
+    animation:mymove .25s 1;
+    -webkit-animation:mymove .25s 1; /*Safari and Chrome*/
+    line-height: 32px;
+    height: 42px;
+    margin-top: 8px;
+}
+
+.title-text .is-active:hover{
+    line-height: 50px;
+    height: 50px;
+    margin-top: 0;
+}
+
+.title-text .el-submenu:hover .el-submenu__title{
+    line-height: 42px;
+}
+
+.title-text .el-submenu:hover .el-submenu__title .el-icon-arrow-down{
+    color: rgb(187, 17, 0);
+}
+/* ------------------------------------style element 框架默认样式================================================= */
+.el-button--primary{
+    color: #FFF;
+    background-color: #b10;
+    border-color: #b10;
+}
+.el-button--primary.is-active, .el-button--primary:active, .el-button--primary:focus, .el-button--primary:hover{
+    color: #FFF;
+    background-color: #ca5f56;
+    border-color: #ca5f56;
+}
